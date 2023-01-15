@@ -1,0 +1,110 @@
+.taskForm {
+    margin-top: -1.6875rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.taskForm textarea {
+    background: var(--gray-500);
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    resize: none;
+    height: 3.375rem;
+    padding: 1rem;
+    
+
+    margin-right: 0.5rem;
+    width: 100%;
+}
+
+.taskForm button[type=submit] {
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 8px;
+    border: transparent;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    transition: 0.1s;
+}
+
+.taskForm button[type=submit]:hover {
+    background: var(--blue);
+}
+
+
+.status{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.createdTasks {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.createdTasks strong {
+    color: var(--blue);
+    font-size: 14px;
+}
+
+.createdTasks p {
+    color: var(--gray-200);
+    font-size: 12px;
+    font-weight: 700;
+    background: var(--gray-500);
+    padding: 0.125rem 0.5rem ;
+    border-radius: 999px;
+}
+
+.concludedTasks {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.concludedTasks strong {
+    color: var(--purple);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.concludedTasks p {
+    color: var(--gray-200);
+    font-size: 12px;
+    font-weight: 700;
+    background: var(--gray-500);
+    padding: 0.125rem 0.5rem ;
+    border-radius: 999px;
+}
+
+.withoutTask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-top: 2px solid var(--gray-500);
+    border-radius: 8px;
+    padding: 4rem 1.5rem;
+    color: var(--gray-300);
+    line-height: 1.4;
+}
+
+.withoutTask strong {
+    margin-top: 1rem;
+}
+
+.withoutTask svg {
+    color: var(--gray-500);
+}
+
+
+

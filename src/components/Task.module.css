@@ -1,0 +1,67 @@
+.taskBox {
+    background: var(--gray-500);
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--gray-400);
+    border-radius: 0.5rem ;
+}
+
+.taskBox + .taskBox{
+    margin-top: 0.75rem;
+}
+
+.contentTask {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contentTask input[type="checkbox"] {
+    margin: 3.27px;
+    border-radius: 2px;
+    line-height: 0;
+    height: 0.75rem;
+}
+
+.contentTask input[type="checkbox"]:checked + label > span{
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+.contentTask > button {
+    background: transparent;
+    border: 0;
+    color: var(--gray-300);
+    line-height: 0;
+    border-radius: 2px;
+    padding: 3px;
+
+    transition: 0.1s background-color;
+}   
+
+.contentTask > button:hover {
+    color: var(--danger);
+    background: var(--gray-400);
+}
+
+.checkbox{
+    display: flex;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.checkbox label {
+    width: 90%;
+}
+
+.checkbox span{
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
+    line-height: 1.4;
+}
+
+
+

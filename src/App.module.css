@@ -1,0 +1,15 @@
+.wrapper {
+  max-width: 46rem;
+  margin: auto;
+
+}
+
+@media (max-width: 768px) {
+  html {
+      font-size: 87.5%; /*"regra de 3, se 16px é 100%, então 14*100//16 = 87.5"*/
+  }
+
+  .wrapper {
+    width: 85%;
+  }
+}
